@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNT House selling</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/Logohome.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+
+  <!-- loading -->
+  <style>
+    .spinner-wrapper{
+      background-color:white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s;
+    }
+    .spinner-border{
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+  
+    <!---loading page -->
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  <script>
+    const spinnerWrapperE1 = document.querySelector('.spinner-wrapper');
+    window.addEventListener('load',() => {
+      // spinnerWrapperE1.style.opacity = 0;
+  
+      setTimeout(() => {
+        spinnerWrapperE1.style.display='none';
+      },200);
+    });
+  
+  </script>
+
+
+
+    <!-- header for navigation -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="container">
+              <!-- logo -->
+              <img src="img/Logohome.png" alt="" width="auto", height="60px">
+              <h3 class="navbar-brand fw-bold fs-3" >SNT HS</h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- nav bar -->
+              <div class="collapse navbar-collapse fs-6 " id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html" id="Home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROPERTY
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="property.html">Property List</a></li>
+                      <li><a class="dropdown-item" href="property.html">Property Type</a></li>
+                      <li><a class="dropdown-item" href="property.html">Property Agents</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CONTACT
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="contact.html ">Agents</a></li>
+                      <li><a class="dropdown-item" href="contact.html">Owner of house</a></li>
+                      <li><a class="dropdown-item" href="contact.html">Owner of company</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <button id="login" > <a href="login.html">Login | Signup</a> </button>
+            </div>
+          </nav>
+
+
+
+    </header>
+    <!-- end -->
+
+    <main>
+
+      <!-- header pic -->
+
+      <div class="wrapper">
+        <div class="image">
+          <img src="img/about2.jpg" alt="">
+          <div class="content">
+            <h5 style="color: white;"><a href="index.html">Home</a> > <a href="about.html">About Us</a></h5>
+            <h1 class="" style="color: rgb(212,95,255);">ABOUT US</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+
+      <div class="container-xxl py-0 mt-0" style="background: rgb(236, 186, 255);">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.05s">
+                    <div class="image about-img position-relative overflow-hidden p-0 pe-0">
+                        <img class="img-fluid w-80" src="img/about pic.png">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="mb-4 fw-bold">#1 Place To Find The Perfect Property</h1>
+                    <p class="mb-4">We always ready to help by providing the best service for you. We believe a good place to live can make your life better.
+                    </p>
+                    <p><i class="fa fa-check me-3"></i>Price we provides is the best for you.</p>
+                    <p><i class="fa fa-check me-3"></i>we guarantee no price changes on your property</p>
+                    <p><i class="fa fa-check me-3"></i>Discover Most Suitable Properety</p>
+
+                    <div class="container d-inline-flex"> 
+                        <div class="col-lg-6 wow fadeIn">
+                          <p style="color: rgb(212,95,255); font-size: 40px; padding: 0; margin-bottom: 0; margin-top: 0;"><i class='bx bx-user-circle'></i></p>
+                          <p class="fw-bold fs-3" style="top: 0; padding: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 90k+ Renters</p>
+                          <p style="color: gray; margin-top: -20px;">believe in our service & Care</p>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                          <p style="color: rgb(212,95,255); font-size: 40px; padding: 0; margin-bottom: 0; margin-top: 0;"><i class='bx bxs-building-house'></i></p>
+                          <p class="fw-bold fs-3" style="top: 0; padding: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 120k+ Renters</p>
+                          <p style="color: gray; margin-top: -20px;" >house ready for cccupancy</p>
+                        </div>
+                      </div>  
+                    <!-- <a class="btn py-3 px-5 mt-3" href="" id="Readmore">Read More</a> -->
+                    <!-- <p class="fw-bold">Over 20 years’ experience providing top quality house Booking in to the rant and sell for your Amazing Dream & Make you Happy.
+                    </p> -->
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end about -->
+
+    <!-- Construction -->
+
+    <div class="container-xxl py-0 mt-5 mb-6" style="background: rgb(236, 186, 255);">
+      <div class="container">
+          <div class="row g-5 align-items-top">
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+                <p style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Capablities</p>
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Awesome Real Estate Company for Housing and Construction.</h>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: gray;">01</h1>
+                <h4 class="p-0 m-0 fw-bold" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(212,95,255);">Property Booking</h3>
+                <p class="fs-3 p-0 mt-0">-------------</p>
+                <p class="m-0 p-0">Creating a higher spacing and how people move through a unique and impactful campaign.</p>
+               <br>
+               <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: gray;">02</h1>
+               <h4 class="p-0 m-0 fw-bold" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(212,95,255);">House Management</h3>
+               <p class="fs-3 p-0 mt-0">-------------</p>
+               <p class="m-0 p-0">Creating a higher spacing and how people move through a unique and impactful campaign.</p>
+             
+              </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+              <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: gray;">03</h1>
+                <h4 class="p-0 m-0 fw-bold" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(212,95,255);">Payment Guarantee</h3>
+                <p class="fs-3 p-0 mt-0">-------------</p>
+                <p class="m-0 p-0">Creating a higher spacing and how people move through a unique and impactful campaign.</p>
+               <br>
+               <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: gray;">04</h1>
+               <h4 class="p-0 m-0 fw-bold" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(212,95,255);">Property Deal</h3>
+               <p class="fs-3 p-0 mt-0">-------------</p>
+               <p class="m-0 p-0">Creating a higher spacing and how people move through a unique and impactful campaign.</p>
+             
+          </div>
+      </div>
+    </div>
+
+<!-- client say -->
+
+<div class="container-xxl py-0 mt-5" style="background: rgb(236, 186, 255);">
+  <div class="container">
+      <h2 class="fw-bold text-center">What our clients say ?</h2>
+      <p class="text-center" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+      <hr>
+
+      <div class="row g-5 align-items-top mt-3">
+
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+            <p class="text-center fs-5" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "> <i>"Hously made the processes so easy. Hously instantly increased the amount of interest and ultimately saved us over $10,000. Thank You!!!" </i></p>
+            <p class="text-center" style="color: rgb(212,95,255);"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+            <img class="images" src="img/chomneu.jpg" alt="client" style="height: 60px; width: auto;">
+            <p class="fs-6 text-center m-1" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chomneau Men</p>
+            <p class="text-center mt-0" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Manager</p>
+        </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+          <p class="text-center fs-5" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "> <i>" My favorite part about selling my home myself was that we got to meet and get to know the people personally. This made it so much more enjoyable! " </i></p>
+          <p class="text-center" style="color: rgb(212,95,255);"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+          <img class="images" src="img/thaireuth.jpg" alt="client" style="height: 60px; width: auto;">
+          <p class="fs-6 text-center m-1" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ThaiReuth Bunny</p>
+          <p class="text-center mt-0" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Manager</p>
+      </div>        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+        <p class="text-center fs-5" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "> <i>" I highly recommend Hously as the new way to sell your home "by owner". My home sold in 24 hours for the asking price. Best $400 you could spend to sell your home. "</i></p>
+        <p class="text-center" style="color: rgb(212,95,255);"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+        <img class="images" src="img/Ravy.jpg" alt="client" style="height: 60px; width: auto;">
+        <p class="fs-6 text-center m-1" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Ravy Sem</p>
+        <p class="text-center mt-0" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Manager</p>
+      </div>
+    </div>
+
+    <div class="row g-5 align-items-top mt-3">
+
+      <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+          <p class="text-center fs-5" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "> <i>"Hously made the processes so easy. Hously instantly increased the amount of interest and ultimately saved us over $10,000. Thank You!!!" </i></p>
+          <p class="text-center" style="color: rgb(212,95,255);"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+          <img class="images" src="img/chomneu.jpg" alt="client" style="height: 60px; width: auto;">
+          <p class="fs-6 text-center m-1" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chomneau Men</p>
+          <p class="text-center mt-0" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Manager</p>
+      </div>
+      <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+        <p class="text-center fs-5" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "> <i>" My favorite part about selling my home myself was that we got to meet and get to know the people personally. This made it so much more enjoyable! " </i></p>
+        <p class="text-center" style="color: rgb(212,95,255);"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+        <img class="images" src="img/thaireuth.jpg" alt="client" style="height: 60px; width: auto;">
+        <p class="fs-6 text-center m-1" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ThaiReuth Bunny</p>
+        <p class="text-center mt-0" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Manager</p>
+    </div>        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.05s">
+      <p class="text-center fs-5" style="color: gray; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "> <i>" I highly recommend Hously as the new way to sell your home "by owner". My home sold in 24 hours for the asking price. Best $400 you could spend to sell your home. "</i></p>
+      <p class="text-center" style="color: rgb(212,95,255);"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+      <img class="images" src="img/Ravy.jpg" alt="client" style="height: 60px; width: auto;">
+      <p class="fs-6 text-center m-1" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Ravy Sem</p>
+      <p class="text-center mt-0" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Manager</p>
+    </div>
+      
+  </div>
+  </div>
+</div>
+
+<!-- Get in touch -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+      <!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-0 wow fadeIn​" data-wow-delay="0.1s">
+  <div class="container py-2">
+      <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Get In Touch</h5>
+              <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+096 282 948 8</p>
+              <p class="mb-2"><i class="fa fa-envelope me-3"></i>Sovannysonita@gmail.com</p>
+              <div class="d-flex pt-2">
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Quick Links</h5>
+              <a class="btn btn-link text-white-50" href="">About Us</a>
+              <a class="btn btn-link text-white-50" href="">Contact Us</a>
+              <a class="btn btn-link text-white-50" href="">Our Services</a>
+              <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+              <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Photo Gallery</h5>
+              <div class="row g-2 ">
+                  <div class="col-4 rounded p-0" id="smallbg">
+                      <img class="img-fluid rounded p-1" src="img/property-1.jpg" alt="">
+                  </div>
+                  <div class="col-4 rounded p-0" id="smallbg">
+                      <img class="img-fluid rounded p-1" src="img/property-2.jpg" alt="">
+                  </div>
+                  <div class="col-4 rounded p-0" id="smallbg">
+                      <a href="#"><img class="img-fluid rounded p-1" src="img/property-3.jpg" alt=""></a>
+                  </div>
+                  <div class="col-4 rounded p-0" id="smallbg">
+                      <img class="img-fluid rounded  p-1" src="img/property-4.jpg" alt="">
+                  </div>
+                  <div class="col-4 rounded p-0" id="smallbg">
+                      <img class="img-fluid rounded  p-1" src="img/property-5.jpg" alt="">
+                  </div>
+                  <div class="col-4 rounded p-0" id="smallbg">
+                      <img class="img-fluid rounded  p-1" src="img/property-6.jpg" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Newsletter</h5>
+              <p>The way to get started is to quit talking and begin doing.</p>
+              <div class="position-relative mx-auto" style="max-width: 400px;">
+                  <input class="form-control w-100 py-3 ps-4 pe-5 text-dark" type="text" style="color: white;" placeholder="Your Email...">
+                  <button id="box3" type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" >SignUp</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="copyright">
+          <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  &copy; <a class="border-bottom" href="#">SNT House selling</a>, All Right Reserved. 
+                  
+
+                  Designed By <a class="border-bottom" href="">SONITA</a>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                  <div class="footer-menu">
+                      <a href="#">Home</a>
+                      <a href="#">Cookies</a>
+                      <a href="#">Help</a>
+                      <a href="#">FQAs</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+
+
+    </footer>
+
+    <!-- body for content  -->
+
+    <!-- bootstrap5 cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

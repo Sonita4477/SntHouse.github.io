@@ -1,0 +1,49 @@
+.body {
+    margin: 0;
+}
+
+.navbar-brand{
+    padding-left: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbarNavDropdown{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 400px;
+    margin-top: 5px;
+}
+.navbar-nav a:hover{
+    color:rgb(212, 95, 255);
+    text-decoration: underline rgb(218, 155, 255);
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: black;
+}
+#Home a:hover {
+    color:rgb(212, 95, 255);
+    text-decoration: underline rgb(218, 155, 255);    
+
+}
+#login{
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: rgb(212, 95, 255);
+    border-color: rgb(212, 95, 255) ;
+    
+    
+}
+#login a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#login:hover {
+    color: rgb(243, 136, 245);
+    background-color: black;
+    border-color: black;
+
+}
