@@ -1,7 +1,6 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-
 .body {
     margin: 0;
 }
@@ -64,8 +63,6 @@ html{
     }
 }
 
-/* main */
-
 /* header pic */
 
 .wrapper{
@@ -111,81 +108,6 @@ html{
 }
 
 
-/*** Category ***/
-.cat-item div {
-    background: #FFFFFF ;
-    border: 1px dashed rgb(212, 95, 255);
-    transition: .5s;
-}
-
-.cat-item:hover div {
-    background: rgb(226, 147, 255);
-    border-color: transparent;
-}
-
-.cat-item div * {
-    transition: .5s;
-}
-
-.cat-item:hover div * {
-    color: #FFFFFF !important;
-}
-.icon {
-    padding: 15px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF !important;
-    border-radius: 50px;
-    border: 10px;
-    border-color: rgb(212, 95, 255);
-}
-#Readmore{
-    background-color: rgb(212, 95, 255);
-    color: white;
-}
-#Readmore:hover {
-    color: rgb(243, 136, 245);
-    background-color: black;
-    border-color: black;
-
-}
-.fa {
-    color : white
-}
-#box{
-    background-color: none;
-    color: black;
-    border-color: rgb(212, 95, 255);
-
-
-
-}
-#box:hover {
-    background-color: rgb(212, 95, 255);
-    
-
-}
-#box1{
-    background-color: rgb(212, 95, 255);
-}
-#box2{
-    background-color: rgb(236, 186, 255);
-}
-
-/* cate hover */
-
-.inner{
-    overflow: hidden;
-}
-.inner img{
-    transition: all 1.5s ease;
-}
-.inner:hover img{
-    transform: scale(1.5);
-}
-/* ....... */
-
 /* cate hover */
 
 .image{
@@ -202,6 +124,43 @@ html{
     color: rgb(185, 4, 250);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* hover pic */
+
+.mouse-over {
+    display: block;
+    width: 100%;
+    transition: 1s;
+}
+
+.mouse-over:hover {
+    box-shadow: rgba(255, 33, 248, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
+    transition: 0.3s;
+    z-index: 2;
+
+
+}
+
+/* scroll box */
+.scroll-box {
+    max-height: 600px;
+    overflow-y: scroll;
+  }
+
+  /*  */
+
+  .card-body p{
+    color: gray;
+  }
+
+  .card{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .card-body{
+    background-color: rgb(247, 234, 254);
+  }
+
 
 
 
@@ -309,6 +268,8 @@ html{
 #box3{
     background-color: rgb(212, 95, 255);
     color: white;
+    align-items: center;
+    justify-content: center;
 }
 #box3:hover {
     color: rgb(243, 136, 245);

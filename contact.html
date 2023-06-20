@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNT House selling</title>
-    <link rel="stylesheet" href="property.css">
-    <script src="js.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
     <!-- favicon -->
@@ -82,7 +82,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
             <div class="container">
               <!-- logo -->
-              <img src="img/Logohome.png" alt="" width="auto", height="60px">
+              <a href="index.html"><img src="img/Logohome.png" alt="" width="auto", height="60px"></a>
               <h3 class="navbar-brand fw-bold fs-3" >SNT HS</h3>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -101,20 +101,13 @@
                       PROPERTY
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="property.html">Property List</a></li>
+                      <li><a class="dropdown-item" href="property Detail.html">Property Detail</a></li>
                       <li><a class="dropdown-item" href="property.html">Property Type</a></li>
-                      <li><a class="dropdown-item" href="property.html">Property Agents</a></li>
+                      <li><a class="dropdown-item" href="Agents.html">Property Agents</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      CONTACT
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="contact.html">Agents</a></li>
-                      <li><a class="dropdown-item" href="contact.html">Owner of house</a></li>
-                      <li><a class="dropdown-item" href="contact.html">Owner of company</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
                   </li>
                 </ul>
               </div>
@@ -129,17 +122,206 @@
 
     <main>
 
-       <!-- header pic -->
+    <!-- header pic -->
 
-       <div class="wrapper">
-        <div class="image">
-          <img src="img/about2.jpg" alt="">
-          <div class="content">
-            <h5 style="color: white;"><a href="index.html">Home</a> > <a href="about.html">About Us</a></h5>
-            <h1 class="" style="color: rgb(212,95,255);">ABOUT US</h1>
-          </div>
+    <div class="wrapper">
+      <div class="image">
+        <img src="img/about2.jpg" alt="">
+        <div class="content">
+          <h5 style="color: white;"><a href="index.html">Home</a> > <a href="contact.html">Contact Us</a></h5>
+          <h1 class="" style="color: rgb(212,95,255);">CONTACT US</h1>
         </div>
       </div>
+    </div>
+
+  <!-- main contact -->
+
+  <div class="container-xxl py-5" style="background: rgb(236, 186, 255);">
+    <div class="container">
+        <div class="bg-light rounded p-3">
+            <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded w-100" src="img/conect.png" alt="">
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                      <div class="well well-sm">
+                        <form class="form-horizontal" action="" method="post">
+                        <fieldset>
+                          <legend class="text-center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact us</legend>
+                  
+                          <!-- Name input-->
+                          <div class="form-group">
+                            <label class="col-md-3 control-label" for="name">Name</label>
+                            <div class="col-md-9">
+                              <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                            </div>
+                          </div>
+                  
+                          <!-- Email input-->
+                          <div class="form-group">
+                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                            <div class="col-md-9">
+                              <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                            </div>
+                          </div>
+                  
+                          <!-- Message body -->
+                          <div class="form-group">
+                            <label class="col-md-3 control-label" for="message">Your message</label>
+                            <div class="col-md-9">
+                              <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                            </div>
+                          </div>
+                  
+                          <!-- Form actions -->
+                          <div class="form-group">
+                            <div class="d-flex justify-content-center">
+                              <button class="btn mx-auto text-light mt-2" style="background-color: rgb(212,95,255);">Submit</button>
+                            </div>
+                          </div>
+                        </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- End main contact -->
+
+  <!-- more contact -->
+
+  <div class="container-xxl" style="background: rgb(236, 186, 255);">
+    <div class="container">
+         <hr>
+
+        <div class="row g-5 align-items-top mt-0">
+  
+          <div class="col-lg-4 wow fadeIn text-center" data-wow-delay="0.05s">
+            <img class="images" src="img/phone icon.png" alt="" >
+            <h3>Phone</h3>
+            <p>The phrasal sequence of the is now so that many campaign and benefit</p>
+            <a href="#"><p>+855 962 9488</p></a>
+          </div>
+          <div class="col-lg-4 wow fadeIn text-center" data-wow-delay="0.05s">
+            <img class="images" src="img/email icon.png" alt="">
+            <h3>Email</h3>
+            <p>The phrasal sequence of the is now so that many campaign and benefit</p>
+            <a href="#"><p>Sovannysonita@gmail.com</p> </a>
+          </div>        
+          <div class="col-lg-4 wow fadeIn text-center" data-wow-delay="0.05s">
+            <img class="images" src="img/location.png" alt="">
+            <h3>Location</h3>
+            <p>C/54 Northwest Freeway, Suite 558,
+              Houston, USA 485</p>
+            <a href="https://www.google.com/maps/place/%E1%9E%9C%E1%9E%B7%E1%9E%91%E1%9F%92%E1%9E%99%E1%9E%B6%E1%9E%9F%E1%9F%92%E1%9E%90%E1%9E%B6%E1%9E%93%E1%9E%A2%E1%9E%97%E1%9E%B7%E1%9E%9C%E1%9E%8C%E1%9F%92%E1%9E%8D%E1%9E%93%E1%9F%8D%E1%9E%92%E1%9E%93%E1%9E%92%E1%9E%B6%E1%9E%93%E1%9E%98%E1%9E%93%E1%9E%BB%E1%9E%9F%E1%9F%92%E1%9E%9F%E1%9E%A2%E1%9E%B6%E1%9E%9F%E1%9F%8A%E1%9E%B8%E1%9E%93%E1%9F%85%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/@11.5682243,104.8413457,17z/data=!3m1!4b1!4m6!3m5!1s0x3109517103ee957d:0xb2703105ec95a56f!8m2!3d11.5682191!4d104.8439206!16s%2Fg%2F1q2_d88k0?entry=ttu">
+              <p>View on Google Map</p>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- end more contact -->
+
+
+  <!-- map -->
+
+    <div >
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.77167698305!2d104.84134567444828!3d11.56821908863281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109517103ee957d%3A0xb2703105ec95a56f!2z4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6f4Z-S4Z6Q4Z624Z6T4Z6i4Z6X4Z634Z6c4Z6M4Z-S4Z6N4Z6T4Z-N4Z6S4Z6T4Z6S4Z624Z6T4Z6Y4Z6T4Z674Z6f4Z-S4Z6f4Z6i4Z624Z6f4Z-K4Z644Z6T4Z-F4Z6A4Z6Y4Z-S4Z6W4Z674Z6H4Z62!5e0!3m2!1skm!2skh!4v1686044925513!5m2!1skm!2skh" 
+      width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  <!-- end map -->
+
+
+  <footer>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-0 wow fadeIn​" data-wow-delay="0.1s">
+      <div class="container py-2">
+          <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Get In Touch</h5>
+                  <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                  <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+096 282 948 8</p>
+                  <a target="_blank" href="https://www.google.com/intl/km/gmail/about/" style="text-decoration: none; color: gray;"><p class="mb-2"><i class="fa fa-envelope me-3"></i>Sovannysonita@gmail.com</p></a>
+                  <div class="d-flex pt-2">
+                      <a class="btn btn-outline-light btn-social" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fkh.linkedin.com%2F"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Quick Links</h5>
+                  <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                  <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                  <a class="btn btn-link text-white-50" href="Agents.html">Our Services</a>
+                  <a class="btn btn-link text-white-50" href="#">Privacy Policy</a>
+                  <a class="btn btn-link text-white-50" href="#">Terms & Condition</a>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Photo Gallery</h5>
+                  <div class="row g-2 ">
+                      <div class="col-4 rounded p-0" id="smallbg">
+                          <a href="property.html"><img class="img-fluid rounded p-1" src="img/property-1.jpg" alt=""></a>
+                      </div>
+                      <div class="col-4 rounded p-0" id="smallbg">
+                          <a href="property.html"><img class="img-fluid rounded p-1" src="img/property-2.jpg" alt=""></a>
+                      </div>
+                      <div class="col-4 rounded p-0" id="smallbg">
+                          <a href="property.html"><img class="img-fluid rounded p-1" src="img/property-3.jpg" alt=""></a>
+                      </div>
+                      <div class="col-4 rounded p-0" id="smallbg">
+                          <a href="property.html"><img class="img-fluid rounded  p-1" src="img/property-4.jpg" alt=""></a>
+                      </div>
+                      <div class="col-4 rounded p-0" id="smallbg">
+                          <a href="property.html"><img class="img-fluid rounded  p-1" src="img/property-5.jpg" alt=""></a>
+                      </div>
+                      <div class="col-4 rounded p-0" id="smallbg">
+                          <a href="property.html"><img class="img-fluid rounded  p-1" src="img/property-6.jpg" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Newsletter</h5>
+                  <p>The way to get started is to quit talking and begin doing.</p>
+                  <div class="position-relative mx-auto" style="max-width: 400px;">
+                      <input class="form-control w-100 py-3 ps-4 pe-5 text-dark" type="text" style="color: white;" placeholder="Your Email...">
+                      <button id="box3" type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" >SignUp</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="copyright">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                      &copy; <a class="border-bottom" href="#">SNT House selling</a>, All Right Reserved. 
+                      
+  
+                      Designed By <a class="border-bottom" target="_blank" href="https://www.facebook.com/nanita.nanita.7505468?mibextid=ZbWKwL">SONITA</a>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="footer-menu">
+                          <a href="index.html">Home</a>
+                          <a href="Agents.html">Agents</a>
+                          <a href="contact.html">Help</a>
+                          <a href="#">FQAs</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Footer End -->
+    
+    
+    
+        </footer>
 
 
 
@@ -149,6 +331,10 @@
 
 
     </main>
-        
+
+   <!-- bootstrap5 cdn -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
     </body>
     </html>

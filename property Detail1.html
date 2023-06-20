@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNT House selling</title>
+    <link rel="stylesheet" href="property Detail.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/Logohome.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+
+  <!-- loading -->
+  <style>
+    .spinner-wrapper{
+      background-color:white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s;
+    }
+    .spinner-border{
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+  
+    <!---loading page -->
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  <script>
+    const spinnerWrapperE1 = document.querySelector('.spinner-wrapper');
+    window.addEventListener('load',() => {
+      // spinnerWrapperE1.style.opacity = 0;
+  
+      setTimeout(() => {
+        spinnerWrapperE1.style.display='none';
+      },200);
+    });
+  
+  </script>
+
+
+
+    <!-- header for navigation -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="container">
+              <!-- logo -->
+              <a href="index.html"><img src="img/Logohome.png" alt="" width="auto", height="60px"></a>
+              <h3 class="navbar-brand fw-bold fs-3" >SNT HS</h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- nav bar -->
+              <div class="collapse navbar-collapse fs-6 " id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html" id="Home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROPERTY
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="property Detail.html">Property Detail</a></li>
+                      <li><a class="dropdown-item" href="property.html">Property Type</a></li>
+                      <li><a class="dropdown-item" href="Agents.html">Property Agents</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+              <button id="login" > <a href="login.html">Login | SignUp</a> </button>
+            </div>
+          </nav>
+
+
+
+    </header>
+    <!-- end -->
+
+    <main>
+
+      <!-- header pic -->
+
+      <div class="wrapper">
+        <div class="image">
+          <img src="img/pro1.jpg" alt="">
+          <div class="content">
+            <h5 style="color: white;"><a href="index.html">Home</a> > <a href="property Detail.html">Property Details</a></h5>
+            <h1 class="" style="color: rgb(212,95,255);">PROPERTY DETAIL</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home1 detail -->
+
+      <div class="container-fluid header p-0" id="Background">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+            <div class="col ms-2 mb-2 ">
+              <img src="img/ap1.jpg" class="img-fluid rounded mouse-over" alt="">
+            </div>
+            <div class="row col ms-2 mb-2">
+              <div class="col-md-6 animated fadeIn">
+                <img class="img-fluid rounded p-0 mouse-over" src="img/v1.jpg" alt="">
+              </div>
+              <div class="col-md-6 animated fadeIn">
+                <img class="img-fluid rounded p-0 mouse-over" src="img/k1.jpg" alt="">
+              </div>
+              
+              <div class="col-md-6 animated fadeIn mt-4">
+                <img class="img-fluid rounded p-0 mouse-over" src="img/b1.jpg" alt="">
+              </div>
+              <div class="col-md-6 animated fadeIn mt-4	">
+                <img class="img-fluid rounded p-0 mouse-over" src="img/ba1.jpg" alt="">
+              </div>
+            </div>   
+        </div>
+      </div>
+      
+    <!-- end  -->
+
+      <hr>
+
+    <!-- text home detail -->
+
+    <div class="container-fluid header p-0" id="Background">
+      <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+        
+          <div class="col-8 scroll-box p-5 ">
+              <h5>10765 Hillshire Ave, Baton Rouge, LA 70810, USA</h5>
+              <p>
+                8000sqf
+                <i class='bx bx-bed'></i>4 beds
+                <i class='bx bx-bath'></i>4 Baths
+              </p>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+              <p>
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+                Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+              </p>
+
+              <hr>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.1183165784078!2d-91.11140562548238!3d30.347587174772322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a58faa8c1fe7%3A0xb452fe39ecdd2869!2zMTA3NjUgSGlsbHNoaXJlIEF2ZSwgQmF0b24gUm91Z2UsIExBIDcwODEwLCDhnp_hnqDhnprhnorhn5LhnovhnqLhnrbhnpjhn4HhnprhnrfhnoA!5e0!3m2!1skm!2skh!4v1686581768924!5m2!1skm!2skh" 
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+          </div>
+
+          <div class="col-4 d-flex align-items-start flex-column mb-3 p-5 ">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">  Price:</h5>
+                <h6 class="fs-5">$500000</h6> 
+                <p>Days on Hously 124 Days</p>
+                <p>Price per sq ft $ 186</p>
+                <p>Monthly Payment (estimate) $ 1497/Monthly</p>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="mx-auto">
+              <h5>Have Question ? Get in touch!</h5>
+              <br>
+              <a href="contact.html" id="box3" class="btn justify-content">Contact Now!</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- end text -->
+
+    </main>
+
+
+    <footer>
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-0 wow fadeIn​" data-wow-delay="0.1s">
+          <div class="container py-2">
+              <div class="row g-5">
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Get In Touch</h5>
+                      <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                      <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+096 282 948 8</p>
+                      <p class="mb-2"><i class="fa fa-envelope me-3"></i>Sovannysonita@gmail.com</p>
+                      <div class="d-flex pt-2">
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Quick Links</h5>
+                      <a class="btn btn-link text-white-50" href="">About Us</a>
+                      <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                      <a class="btn btn-link text-white-50" href="">Our Services</a>
+                      <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                      <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Photo Gallery</h5>
+                      <div class="row g-2 ">
+                          <div class="col-4 rounded p-0" id="smallbg">
+                              <img class="img-fluid rounded p-1" src="img/property-1.jpg" alt="">
+                          </div>
+                          <div class="col-4 rounded p-0" id="smallbg">
+                              <img class="img-fluid rounded p-1" src="img/property-2.jpg" alt="">
+                          </div>
+                          <div class="col-4 rounded p-0" id="smallbg">
+                              <a href="#"><img class="img-fluid rounded p-1" src="img/property-3.jpg" alt=""></a>
+                          </div>
+                          <div class="col-4 rounded p-0" id="smallbg">
+                              <img class="img-fluid rounded  p-1" src="img/property-4.jpg" alt="">
+                          </div>
+                          <div class="col-4 rounded p-0" id="smallbg">
+                              <img class="img-fluid rounded  p-1" src="img/property-5.jpg" alt="">
+                          </div>
+                          <div class="col-4 rounded p-0" id="smallbg">
+                              <img class="img-fluid rounded  p-1" src="img/property-6.jpg" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Newsletter</h5>
+                      <p>The way to get started is to quit talking and begin doing.</p>
+                      <div class="position-relative mx-auto" style="max-width: 400px;">
+                          <input class="form-control w-100 py-3 ps-4 pe-5 text-dark" type="text" style="color: white;" placeholder="Your Email...">
+                          <button id="box3" type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" >SignUp</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="copyright">
+                  <div class="row">
+                      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                          &copy; <a class="border-bottom" href="#">SNT House selling</a>, All Right Reserved. 
+                          
+      
+                          Designed By <a class="border-bottom" href="">SONITA</a>
+                      </div>
+                      <div class="col-md-6 text-center text-md-end">
+                          <div class="footer-menu">
+                              <a href="index.html">Home</a>
+                              <a href="#">Cookies</a>
+                              <a href="#">Help</a>
+                              <a href="#">FQAs</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer End -->
+      
+      
+      
+          </footer>
+
+
+      <!-- bootstrap5 cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  
+        
+    </body>
+    </html>
